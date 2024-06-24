@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<FOTO TORAKS &le; 0.5<br/>entropy = 0.863<br/>samples = 689<br/>value = [197.0, 492.0]<br/>class = Sangat muda>, fillcolor="#88c4ef"] ;
+1 [label=<entropy = 0.0<br/>samples = 178<br/>value = [178, 0]<br/>class = Muda>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<FOTO TORAKS &le; 1.5<br/>entropy = 0.229<br/>samples = 511<br/>value = [19, 492]<br/>class = Sangat muda>, fillcolor="#41a1e6"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<entropy = 0.0<br/>samples = 491<br/>value = [0, 491]<br/>class = Sangat muda>, fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label=<HASIL TCM &le; 2.0<br/>entropy = 0.286<br/>samples = 20<br/>value = [19, 1]<br/>class = Muda>, fillcolor="#e68843"] ;
+2 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Sangat muda>, fillcolor="#399de5"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 19<br/>value = [19, 0]<br/>class = Muda>, fillcolor="#e58139"] ;
+4 -> 6 ;
+}
